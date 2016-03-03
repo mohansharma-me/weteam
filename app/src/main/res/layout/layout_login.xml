@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.webcodez.weteam.BootLoader">
+
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin">
+
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_marginTop="100dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/ic_action_call"
+            android:scaleType="center"
+            android:layout_width="64sp"
+            android:layout_height="64sp" />
+
+        <TextView
+            android:text="Your Phone Number"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:gravity="center"
+            android:layout_below="@id/imgLogo"
+            android:id="@+id/lblTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="Please confirm your mobile number via OTP"
+            android:gravity="center"
+            android:layout_below="@id/lblTitle"
+            android:id="@+id/lblSubtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:padding="10dp"
+            android:orientation="vertical"
+            android:id="@+id/llContent"
+            android:layout_margin="10dp"
+            android:layout_below="@id/lblSubtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:id="@+id/llAskMobileNumber"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:maxLength="10"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:inputType="numberDecimal"
+                    android:hint="Mobile Number"
+                    android:padding="10dp"
+                    android:id="@+id/txtMobileNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:text="Next"
+                    android:onClick="validatePhoneNumber"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llOTPCode"
+                android:visibility="gone"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:maxLength="6"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:inputType="numberDecimal"
+                    android:hint="OTP Code"
+                    android:padding="10dp"
+                    android:id="@+id/txtOTPCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:text="Verify"
+                        android:onClick="verifyOTP"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center_horizontal"
+                        android:id="@+id/btnVerify"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <Button
+                        android:text="Resend OTP"
+                        android:onClick="resendOTP"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center_horizontal"
+                        android:id="@+id/btnResendOTP"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:text="Presented By:"
+            android:gravity="center"
+            android:layout_below="@id/llContent"
+            android:id="@+id/lblPresentedBy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:background="@drawable/wz_logo_256"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/lblPresentedBy"
+            android:id="@+id/imgWcodeZLogo"
+            android:layout_width="80sp"
+            android:layout_height="80sp" />
+
+        <TextView
+            android:text="WebcodeZ Infoway"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_below="@id/imgWcodeZLogo"
+            android:id="@+id/lblWcodeZ"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+</ScrollView>

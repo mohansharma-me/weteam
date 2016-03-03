@@ -1,0 +1,76 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.webcodez.weteam.BootLoader">
+
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin">
+
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_marginTop="100dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/ic_launcher"
+            android:layout_width="128sp"
+            android:layout_height="128sp" />
+
+        <TextView
+            android:text="Welcome to WeTeam"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:gravity="center"
+            android:layout_below="@id/imgLogo"
+            android:id="@+id/lblTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="We're here to protect"
+            android:gravity="center"
+            android:layout_below="@id/lblTitle"
+            android:id="@+id/lblSubtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ProgressBar
+            android:layout_margin="10dp"
+            android:layout_below="@id/lblSubtitle"
+            android:id="@+id/pb1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:text="Presented By:"
+            android:gravity="center"
+            android:layout_below="@id/pb1"
+            android:id="@+id/lblPresentedBy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:background="@drawable/wz_logo_256"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/lblPresentedBy"
+            android:id="@+id/imgWcodeZLogo"
+            android:layout_width="80sp"
+            android:layout_height="80sp" />
+
+        <TextView
+            android:text="WebcodeZ Infoway"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_below="@id/imgWcodeZLogo"
+            android:id="@+id/lblWcodeZ"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+</ScrollView>

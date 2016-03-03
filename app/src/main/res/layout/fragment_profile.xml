@@ -1,0 +1,72 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.webcodez.weteam.page.Profile">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:background="@color/header_background"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/ic_launcher"
+                android:layout_width="64sp"
+                android:layout_height="64sp" />
+
+            <TextView
+                android:text="Profile Setup"
+                android:textColor="@color/header_foreground"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <EditText
+            android:hint="First name..."
+            android:textSize="20sp"
+            android:singleLine="true"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:id="@+id/txtFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:hint="Last name..."
+            android:textSize="20sp"
+            android:singleLine="true"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:id="@+id/txtLastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:hint="Address..."
+            android:textSize="20sp"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:id="@+id/txtAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:text="SAVE"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:id="@+id/btnSaveProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</FrameLayout>

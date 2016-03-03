@@ -1,0 +1,22 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.webcodez.weteam.page.UserStatus">
+
+    <ImageView
+        android:layout_centerInParent="true"
+        android:background="@drawable/ic_launcher"
+        android:id="@+id/imgLogo"
+        android:layout_width="128sp"
+        android:layout_height="128sp" />
+
+    <TextView
+        android:text="Your Request Status is Pending"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:id="@+id/lblRequestStatus"
+        android:layout_below="@id/imgLogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

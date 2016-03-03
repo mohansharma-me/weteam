@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context="com.webcodez.weteam.Dashboard">
+    <item android:id="@+id/action_dashboard" android:title="Home"
+        android:orderInCategory="100" app:showAsAction="always" />
+    <item android:id="@+id/action_todayList" android:title="Today"
+        android:orderInCategory="100" app:showAsAction="always" />
+    <item android:id="@+id/action_memberList" android:title="Members"
+        android:orderInCategory="100" app:showAsAction="always" />
+</menu>
