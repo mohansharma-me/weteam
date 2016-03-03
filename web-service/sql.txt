@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta name="robots" content="noindex">
+<title>Export: wcodez_updates - Adminer</title>
+<link rel="stylesheet" type="text/css" href="mysql.php?file=default.css&amp;version=4.1.0&amp;driver=mysql">
+<script type="text/javascript" src="mysql.php?file=functions.js&amp;version=4.1.0&amp;driver=mysql"></script>
+<link rel="shortcut icon" type="image/x-icon" href="mysql.php?file=favicon.ico&amp;version=4.1.0&amp;driver=mysql">
+<link rel="apple-touch-icon" href="mysql.php?file=favicon.ico&amp;version=4.1.0&amp;driver=mysql">
+
+<body class="ltr nojs" onkeydown="bodyKeydown(event);" onclick="bodyClick(event);">
+<script type="text/javascript">
+document.body.className = document.body.className.replace(/ nojs/, ' js');
+</script>
+
+<div id="help" class="jush-sql jsonly hidden" onmouseover="helpOpen = 1;" onmouseout="helpMouseout(this, event);"></div>
+
+<div id="content">
+<p id="breadcrumb"><a href="mysql.php">MySQL</a> &raquo; <a href='mysql.php?username=wcodez_developer' accesskey='1' title='Alt+Shift+1'>Server</a> &raquo; <a href="mysql.php?username=wcodez_developer&amp;db=wcodez_updates">wcodez_updates</a> &raquo; Export
+<h2>Export: wcodez_updates</h2>
+
+<form action="" method="post">
+<table cellspacing="0">
+<tr><th>Output<td><label><input type='radio' name='output' value='text' checked>open</label><label><input type='radio' name='output' value='file'>save</label><label><input type='radio' name='output' value='gz'>gzip</label>
+<tr><th>Format<td><label><input type='radio' name='format' value='sql' checked>SQL</label><label><input type='radio' name='format' value='csv'>CSV,</label><label><input type='radio' name='format' value='csv;'>CSV;</label><label><input type='radio' name='format' value='tsv'>TSV</label>
+<tr><th>Database<td><select name='db_style'><option selected><option>USE<option>DROP+CREATE<option>CREATE</select><label><input type='checkbox' name='routines' value='1'>Routines</label><label><input type='checkbox' name='events' value='1'>Events</label><tr><th>Tables<td><select name='table_style'><option><option selected>DROP+CREATE<option>CREATE</select><label><input type='checkbox' name='auto_increment' value='1'>Auto Increment</label><label><input type='checkbox' name='triggers' value='1' checked>Triggers</label><tr><th>Data<td><select name='data_style'><option selected><option>TRUNCATE+INSERT<option>INSERT<option>INSERT+UPDATE</select></table>
+<p><input type="submit" value="Export">
+<input type="hidden" name="token" value="665530:210226">
+
+<table cellspacing="0">
+<thead><tr><th style='text-align: left;'><label class='block'><input type='checkbox' id='check-tables' onclick='formCheck(this, /^tables\[/);'>Tables</label><th style='text-align: right;'><label class='block'>Data<input type='checkbox' id='check-data' onclick='formCheck(this, /^data\[/);'></label></thead>
+<tr><td><label class='block'><input type='checkbox' name='tables[]' value='activation' onclick="checkboxClick(event, this); formUncheck(&#039;check-tables&#039;);">activation</label><td align='right'><label class='block'><span id='Rows-activation'></span><input type='checkbox' name='data[]' value='activation' onclick="checkboxClick(event, this); formUncheck(&#039;check-data&#039;);"></label>
+<tr><td><label class='block'><input type='checkbox' name='tables[]' value='updates' onclick="checkboxClick(event, this); formUncheck(&#039;check-tables&#039;);">updates</label><td align='right'><label class='block'><span id='Rows-updates'></span><input type='checkbox' name='data[]' value='updates' onclick="checkboxClick(event, this); formUncheck(&#039;check-data&#039;);"></label>
+<tr><td><label class='block'><input type='checkbox' name='tables[]' value='weteam_otp' checked onclick="checkboxClick(event, this); formUncheck(&#039;check-tables&#039;);">weteam_otp</label><td align='right'><label class='block'><span id='Rows-weteam_otp'></span><input type='checkbox' name='data[]' value='weteam_otp' checked onclick="checkboxClick(event, this); formUncheck(&#039;check-data&#039;);"></label>
+<tr><td><label class='block'><input type='checkbox' name='tables[]' value='weteam_user' onclick="checkboxClick(event, this); formUncheck(&#039;check-tables&#039;);">weteam_user</label><td align='right'><label class='block'><span id='Rows-weteam_user'></span><input type='checkbox' name='data[]' value='weteam_user' onclick="checkboxClick(event, this); formUncheck(&#039;check-data&#039;);"></label>
+<script type='text/javascript'>ajaxSetHtml('mysql.php?username=wcodez_developer&db=wcodez_updates&script=db');</script>
+</table>
+</form>
+<p><a href='mysql.php?username=wcodez_developer&amp;db=wcodez_updates&amp;dump=weteam%25'>weteam</a></div>
+
+<form action="" method="post">
+<p class="logout">
+<input type="submit" name="logout" value="Logout" id="logout">
+<input type="hidden" name="token" value="665530:210226">
+</p>
+</form>
+<div id="menu">
+<h1>
+<a href='http://www.adminer.org/' target='_blank' id='h1'>Adminer</a> <span class="version">4.1.0</span>
+<a href="http://www.adminer.org/#download" target="_blank" id="version"></a>
+</h1>
+<script type="text/javascript" src="mysql.php?file=jush.js&amp;version=4.1.0&amp;driver=mysql"></script>
+<script type="text/javascript">
+var jushLinks = { sql: [ 'mysql.php?username=wcodez_developer&db=wcodez_updates&table=$&', /\b(activation|updates|weteam_otp|weteam_user)\b/g ] };
+jushLinks.bac = jushLinks.sql;
+jushLinks.bra = jushLinks.sql;
+jushLinks.sqlite_quo = jushLinks.sql;
+jushLinks.mssql_bra = jushLinks.sql;
+bodyLoad('5.5');
+</script>
+<form action="">
+<p id="dbs">
+<input type="hidden" name="username" value="wcodez_developer"><span title='database'>DB</span>: <select name='db' onmousedown='dbMouseDown(event, this);' onchange='dbChange(this);'><option value=""><option>information_schema<option>wcodez_finnecle<option selected>wcodez_updates</select><input type='submit' value='Use' class='hidden'>
+<input type="hidden" name="dump" value=""></p></form>
+<p class='links'><a href='mysql.php?username=wcodez_developer&amp;db=wcodez_updates&amp;sql='>SQL command</a>
+<a href='mysql.php?username=wcodez_developer&amp;db=wcodez_updates&amp;import='>Import</a>
+<a href='mysql.php?username=wcodez_developer&amp;db=wcodez_updates&amp;dump=' id='dump' class='active '>Dump</a>
+<a href="mysql.php?username=wcodez_developer&amp;db=wcodez_updates&amp;create=">Create table</a>
+<p id='tables' onmouseover='menuOver(this, event);' onmouseout='menuOut(this);'>
+<a href="mysql.php?username=wcodez_developer&amp;db=wcodez_updates&amp;select=activation">select</a> <a href="mysql.php?username=wcodez_developer&amp;db=wcodez_updates&amp;table=activation" title='Show structure'>activation</a><br>
+<a href="mysql.php?username=wcodez_developer&amp;db=wcodez_updates&amp;select=updates">select</a> <a href="mysql.php?username=wcodez_developer&amp;db=wcodez_updates&amp;table=updates" title='Show structure'>updates</a><br>
+<a href="mysql.php?username=wcodez_developer&amp;db=wcodez_updates&amp;select=weteam_otp">select</a> <a href="mysql.php?username=wcodez_developer&amp;db=wcodez_updates&amp;table=weteam_otp" title='Show structure'>weteam_otp</a><br>
+<a href="mysql.php?username=wcodez_developer&amp;db=wcodez_updates&amp;select=weteam_user">select</a> <a href="mysql.php?username=wcodez_developer&amp;db=wcodez_updates&amp;table=weteam_user" title='Show structure'>weteam_user</a><br>
+</div>
+<script type="text/javascript">setupSubmitHighlight(document);</script>

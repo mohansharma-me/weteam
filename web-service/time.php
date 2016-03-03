@@ -1,0 +1,1 @@
+<?phpdate_default_timezone_set("Asia/Calcutta");$time=time();echo "Actual:".date("Y-m-d H:i:s",$time)."<br/>";$time-=15;echo "Modified:".date("Y-m-d H:i:s",$time);
