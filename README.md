@@ -20,3 +20,5 @@ Screenshots:
 ![](https://i1.wp.com/mohansharma.me/wp-content/uploads/2016/06/WeTeam-Searching-Online-Friends.png?w=230&h=367&crop)
 ![](https://i2.wp.com/mohansharma.me/wp-content/uploads/2016/06/WeTeam-Alert-Confirmation.png?w=346&h=554&crop)
 ![](https://i2.wp.com/mohansharma.me/wp-content/uploads/2016/06/WeTeam-Alert-Screen.png?w=346&h=554&crop)
+
+Copyright © 2015 WebcodeZ Infoway
